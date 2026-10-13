@@ -132,5 +132,11 @@ Object.assign(I,{
 'matematyka-1-3':S(L(30,150,300,150,'#94a3b8',1)+L(60,170,60,15,'#94a3b8',1)+L(40,170,240,-30,'#2563eb',3)+L(60,140,250,0,'#dc2626',3)+C(160,70,6,'#0f172a')+T(195,75,'(?, ?)',13)),
 'matematyka-1-4':S(R(70,20,140,140,'#e0e7ff',0,'#4338ca',2)+L(160,20,160,160,'#4338ca',1.5,'stroke-dasharray="5 4"')+L(70,110,210,110,'#4338ca',1.5,'stroke-dasharray="5 4"')+T(115,15,'a',14)+T(185,15,'b',14)+T(60,70,'a',14)+T(60,140,'b',14))
 });
+Object.assign(I,{
+'chemia-1-2':S(P('M110 40h100l-10 120h-80z','#f8fafc','#475569',2)+P('M114 80h92l-7 78h-78z','#7dd3fc','none')+P('M160 15q-14 20 0 28q14-8 0-28z','#38bdf8','#0369a1',1.5)+T(250,110,'woda',14,'#0369a1',700)),
+'chemia-2-1':S(`<defs><linearGradient id="phg"><stop offset="0" stop-color="#dc2626"/><stop offset=".3" stop-color="#f59e0b"/><stop offset=".5" stop-color="#22c55e"/><stop offset=".75" stop-color="#3b82f6"/><stop offset="1" stop-color="#6d28d9"/></linearGradient></defs>`+R(20,60,280,50,'url(#phg)',8)+T(160,145,'skala pH',14)),
+'biologia-2-0':S([...Array(8)].map((_,i)=>{const x=30+i*30;return R(x,60,8,40,'#7c3aed',3)+R(x+10,60,8,40,'#a78bfa',3)}).join('')+T(285,85,'…',28,'#7c3aed',800)+T(160,150,'chromosomy w komórce człowieka',12,'#475569',500)),
+'matematyka-0-0':S([1,2,4,8,16].map((n,i)=>{let o='';for(let k=0;k<n;k++)o+=R(20+i*55+(k%4)*10,140-Math.floor(k/4)*10,8,8,'#6366f1',1);return o+T(37+i*55,170,n,12)}).join('')+T(300,140,'?',28,'#dc2626',800))
+});
 window.ILUSTRACJE=I;
 })();
