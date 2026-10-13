@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kartkówka bez stresu – quizy z chemii, fizyki i biologii</title>
+<style>body{font-family:system-ui,sans-serif;margin:0;color:#222;background:#f7f9fc}header{background:#2b6cb0;color:#fff;padding:48px 20px;text-align:center}main{max-width:760px;margin:auto;padding:20px}.card{background:#fff;border-radius:12px;padding:20px;margin:16px 0;box-shadow:0 2px 8px #0001}button{background:#2b6cb0;color:#fff;border:0;border-radius:8px;padding:12px 20px;font-size:16px;cursor:pointer}input{padding:10px;font-size:16px;width:100%;box-sizing:border-box;margin:6px 0}.ok{color:green}.bad{color:#c00}small{color:#666}</style></head><body>
+<header><h1>Kartkówka bez stresu</h1><p>Quizy AI z chemii, fizyki i biologii dla 7 i 8 klasy, zgodne z podstawą programową. Z panelem postępów dla rodzica.</p></header>
+<main>
+<div class="card"><h2>Dla rodziców</h2><ul><li>Krótkie quizy przed każdą kartkówką</li><li>Panel, w którym widzisz postępy dziecka</li><li>Jeden przedmiot za darmo, pełny dostęp 29–39 zł miesięcznie</li><li>Przedsprzedaż: pierwszy miesiąc za 1 zł</li></ul></div>
+<div class="card"><h2>Darmowy quiz: Tlenki metali i niemetali</h2><div id="quiz"></div><button onclick="check()">Sprawdź</button><p id="wynik"></p></div>
+<div class="card"><h2>Zapisz się na przedsprzedaż</h2><form onsubmit="zapis(event)"><input type="email" required placeholder="E-mail rodzica" id="email"><select id="kto"><option>Jestem rodzicem</option><option>Jestem nauczycielem</option></select><br><br><label><input type="checkbox" required style="width:auto"> Jestem pełnoletni i akceptuję <a href="regulamin.html">regulamin</a> i <a href="polityka-prywatnosci.html">politykę prywatności</a></label><br><br><button>Zapisz mnie</button></form><p id="dzieki"></p><small>Strona testowa. Konto zakłada i opłaca rodzic. <a href="regulamin.html">Regulamin</a> · <a href="polityka-prywatnosci.html">Polityka prywatności</a></small></div>
+</main>
+<script>
+const Q=[["Jaki jest wzór tlenku wapnia?",["CaO","Ca2O","CaO2"],0],["Jak nazywa się N2O5?",["tlenek azotu(II)","tlenek azotu(V)","tlenek azotu(IV)"],1],["Który tlenek to czad?",["CO2","CO","SO2"],1],["Wzór tlenku żelaza(III) to:",["FeO","Fe3O2","Fe2O3"],2],["SO3 to:",["tlenek siarki(VI)","tlenek siarki(IV)","tlenek siarki(III)"],0]];
+document.getElementById('quiz').innerHTML=Q.map((q,i)=>`<p><b>${i+1}. ${q[0]}</b><br>`+q[1].map((a,j)=>`<label><input type=radio name=q${i} value=${j} style="width:auto"> ${a}</label><br>`).join('')+'</p>').join('');
+function check(){let s=0;Q.forEach((q,i)=>{const c=document.querySelector(`input[name=q${i}]:checked`);if(c&&+c.value===q[2])s++});document.getElementById('wynik').innerHTML=`Wynik: <b>${s}/${Q.length}</b>`}
+function zapis(e){e.preventDefault();const l=JSON.parse(localStorage.zapisy||'[]');l.push({e:email.value,k:kto.value,t:Date.now()});localStorage.zapisy=JSON.stringify(l);dzieki.innerHTML='<span class=ok>Dziękujemy! Odezwiemy się z linkiem do przedsprzedaży.</span>'}
+</script></body></html>
