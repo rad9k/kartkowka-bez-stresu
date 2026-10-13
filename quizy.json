@@ -37,7 +37,7 @@
           ],
           "correct": 2,
           "explanation": "Sód leży w 1. grupie, więc ma 1 elektron na ostatniej powłoce.",
-          "image": "model powłok elektronowych sodu 2-8-1"
+          "image": "model atomu z powłokami elektronowymi, bez liczb"
         },
         {
           "q": "Który pierwiastek jest gazem szlachetnym?",
@@ -49,7 +49,7 @@
           ],
           "correct": 3,
           "explanation": "Argon należy do 18. grupy układu okresowego – gazów szlachetnych.",
-          "image": "balon wypełniony argonem i grupa 18 układu okresowego"
+          "image": "kolorowe balony i fragment układu okresowego bez zaznaczeń"
         },
         {
           "q": "Izotopy tego samego pierwiastka różnią się liczbą:",
@@ -167,7 +167,7 @@
           ],
           "correct": 0,
           "explanation": "Fenoloftaleina w środowisku zasadowym przyjmuje barwę malinową, w kwasowym i obojętnym jest bezbarwna.",
-          "image": "probówka z malinowym roztworem"
+          "image": "probówka z roztworem i kroplomierz"
         },
         {
           "q": "Co powstaje w reakcji kwasu z zasadą?",
@@ -431,7 +431,7 @@
           ],
           "correct": 0,
           "explanation": "Czerwone krwinki (erytrocyty) zawierają hemoglobinę wiążącą tlen.",
-          "image": "czerwone krwinki pod mikroskopem"
+          "image": "mikroskop i szkiełko z kroplą krwi"
         },
         {
           "q": "Gdzie zachodzi wymiana gazowa w płucach?",
@@ -484,7 +484,7 @@
           ],
           "correct": 0,
           "explanation": "Żółć wytwarza wątroba, a magazynuje ją pęcherzyk żółciowy.",
-          "image": "wątroba z pęcherzykiem żółciowym"
+          "image": "schemat układu pokarmowego bez podpisów"
         },
         {
           "q": "W którym odcinku przewodu pokarmowego zachodzi większość wchłaniania składników odżywczych?",
@@ -508,7 +508,7 @@
           ],
           "correct": 2,
           "explanation": "Neuron przewodzi impulsy nerwowe; nefron to jednostka nerki.",
-          "image": "neuron z dendrytami i aksonem"
+          "image": "schemat układu nerwowego człowieka bez podpisów"
         },
         {
           "q": "Który narząd koordynuje ruchy i utrzymanie równowagi?",
@@ -652,7 +652,7 @@
           ],
           "correct": 1,
           "explanation": "Śniardwy (ok. 113 km²) to największe jezioro; Hańcza jest najgłębsze.",
-          "image": "jezioro Śniardwy z żaglówkami"
+          "image": "jezioro z żaglówkami, bez nazwy"
         }
       ]
     },
@@ -705,7 +705,7 @@
           ],
           "correct": 1,
           "explanation": "Ocean Spokojny (Pacyfik) jest największym oceanem na Ziemi.",
-          "image": "globus z Oceanem Spokojnym"
+          "image": "globus z oceanami, bez podpisów"
         },
         {
           "q": "Na którym kontynencie leży pustynia Sahara?",
@@ -758,7 +758,7 @@
           ],
           "correct": 1,
           "explanation": "Równik ma szerokość geograficzną 0° i dzieli Ziemię na półkule północną i południową.",
-          "image": "globus z zaznaczonym równikiem"
+          "image": "globus bez zaznaczonych linii"
         },
         {
           "q": "Jak zmienia się temperatura powietrza w troposferze wraz z wysokością?",
@@ -813,7 +813,7 @@
           ],
           "correct": 1,
           "explanation": "12² = 144, więc √144 = 12.",
-          "image": "kwadrat o polu 144 i boku 12"
+          "image": "kwadrat z napisem P = 144, bez długości boku"
         },
         {
           "q": "Ile to jest 20% z 150?",

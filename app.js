@@ -20,7 +20,7 @@ const META={chemia:['🧪','Chemia','#8b5cf6'],fizyka:['⚡','Fizyka','#f59e0b']
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 let DATA,subj,qi,order=[];
 const $=id=>document.getElementById(id);
-fetch('quizy.json?v=2').then(r=>r.json()).then(d=>{DATA=d;
+fetch('quizy.json?v=3').then(r=>r.json()).then(d=>{DATA=d;
  $('subjects').innerHTML=Object.keys(META).filter(k=>d[k]).map(k=>`<button class="subj" data-s="${k}" style="--sc:${META[k][2]}">${META[k][0]} ${META[k][1]}</button>`).join('');
  $('subjects').onclick=e=>{const b=e.target.closest('.subj');if(b)pickSubj(b.dataset.s)};pickSubj(Object.keys(META).find(k=>d[k]))});
 function pickSubj(s){subj=s;document.querySelectorAll('.subj').forEach(b=>b.classList.toggle('on',b.dataset.s===s));
