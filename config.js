@@ -1,2 +1,2 @@
-// Uzupełnij po założeniu bazy Supabase (tabela "zapisy": email text, kto text, created_at timestamptz default now())
-window.CFG={SUPABASE_URL:"",SUPABASE_KEY:""};
+// Publiczna konfiguracja Supabase (klucz publishable może być w przeglądarce; dostęp chroni RLS).
+window.CFG={SUPABASE_URL:"https://istlnyrmurdckbjykztu.supabase.co",SUPABASE_KEY:"sb_publishable_HgwZ8jFAseFW_w6IGVWFCw_fb1kE_rf"};

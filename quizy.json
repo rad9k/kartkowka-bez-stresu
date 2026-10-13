@@ -1,0 +1,987 @@
+{
+  "chemia": [
+    {
+      "title": "Budowa atomu i układ okresowy",
+      "questions": [
+        {
+          "q": "Ile protonów ma atom tlenu?",
+          "options": [
+            "8",
+            "10",
+            "6",
+            "16"
+          ],
+          "correct": 0,
+          "explanation": "Liczba atomowa tlenu Z = 8, a liczba atomowa to liczba protonów w jądrze.",
+          "image": "kratka tlenu z układu okresowego"
+        },
+        {
+          "q": "Gdzie w atomie znajdują się neutrony?",
+          "options": [
+            "tylko na ostatniej powłoce",
+            "w jądrze atomowym",
+            "na powłokach elektronowych",
+            "poza atomem"
+          ],
+          "correct": 1,
+          "explanation": "Protony i neutrony (nukleony) tworzą jądro atomowe, a elektrony krążą wokół niego.",
+          "image": "model atomu z jądrem i powłokami"
+        },
+        {
+          "q": "Ile elektronów walencyjnych ma atom sodu (Na)?",
+          "options": [
+            "7",
+            "11",
+            "1",
+            "2"
+          ],
+          "correct": 2,
+          "explanation": "Sód leży w 1. grupie, więc ma 1 elektron na ostatniej powłoce.",
+          "image": "model powłok elektronowych sodu 2-8-1"
+        },
+        {
+          "q": "Który pierwiastek jest gazem szlachetnym?",
+          "options": [
+            "wodór",
+            "azot",
+            "chlor",
+            "argon"
+          ],
+          "correct": 3,
+          "explanation": "Argon należy do 18. grupy układu okresowego – gazów szlachetnych.",
+          "image": "balon wypełniony argonem i grupa 18 układu okresowego"
+        },
+        {
+          "q": "Izotopy tego samego pierwiastka różnią się liczbą:",
+          "options": [
+            "neutronów",
+            "elektronów",
+            "protonów",
+            "powłok elektronowych"
+          ],
+          "correct": 0,
+          "explanation": "Izotopy mają tę samą liczbę protonów, a różną liczbę neutronów, więc różną liczbę masową.",
+          "image": "modele jąder izotopów wodoru: prot, deuter, tryt"
+        }
+      ]
+    },
+    {
+      "title": "Wiązania, wzory i reakcje",
+      "questions": [
+        {
+          "q": "Jakie wiązanie występuje w cząsteczce H2?",
+          "options": [
+            "kowalencyjne spolaryzowane",
+            "kowalencyjne niespolaryzowane",
+            "metaliczne",
+            "jonowe"
+          ],
+          "correct": 1,
+          "explanation": "Dwa identyczne atomy wodoru tworzą wspólną parę elektronową, rozłożoną symetrycznie.",
+          "image": "model cząsteczki H2"
+        },
+        {
+          "q": "Jakie wiązanie występuje w chlorku sodu NaCl?",
+          "options": [
+            "kowalencyjne niespolaryzowane",
+            "metaliczne",
+            "jonowe",
+            "wodorowe"
+          ],
+          "correct": 2,
+          "explanation": "Sód oddaje elektron chlorowi i powstają jony Na⁺ i Cl⁻ przyciągające się elektrostatycznie.",
+          "image": "sieć krystaliczna chlorku sodu"
+        },
+        {
+          "q": "Ile atomów tlenu zawiera zapis 2H2O?",
+          "options": [
+            "4",
+            "3",
+            "1",
+            "2"
+          ],
+          "correct": 3,
+          "explanation": "Dwie cząsteczki wody, w każdej po jednym atomie tlenu – razem 2.",
+          "image": "dwa modele cząsteczki H2O"
+        },
+        {
+          "q": "Jaki współczynnik należy wpisać przed H2O w równaniu: 2H2 + O2 → _H2O?",
+          "options": [
+            "2",
+            "4",
+            "3",
+            "1"
+          ],
+          "correct": 0,
+          "explanation": "Po lewej są 4 atomy H i 2 atomy O, więc po prawej muszą być 2 cząsteczki H2O.",
+          "image": "schemat reakcji spalania wodoru"
+        },
+        {
+          "q": "Reakcja 2Mg + O2 → 2MgO to reakcja:",
+          "options": [
+            "wymiany",
+            "syntezy",
+            "zobojętniania",
+            "analizy"
+          ],
+          "correct": 1,
+          "explanation": "Z dwóch substratów powstaje jeden produkt – to reakcja syntezy (łączenia).",
+          "image": "płonąca wstążka magnezu"
+        }
+      ]
+    },
+    {
+      "title": "Kwasy, zasady i sole",
+      "questions": [
+        {
+          "q": "Jaki jest wzór kwasu siarkowego(VI)?",
+          "options": [
+            "H2S",
+            "HNO3",
+            "H2SO4",
+            "H2SO3"
+          ],
+          "correct": 2,
+          "explanation": "Kwas siarkowy(VI) ma wzór H2SO4; H2SO3 to kwas siarkowy(IV).",
+          "image": "butelka z kwasem i znakiem ostrzegawczym"
+        },
+        {
+          "q": "Jaki odczyn ma roztwór o pH = 12?",
+          "options": [
+            "kwasowy",
+            "obojętny",
+            "nie da się określić",
+            "zasadowy"
+          ],
+          "correct": 3,
+          "explanation": "pH powyżej 7 oznacza odczyn zasadowy.",
+          "image": "skala pH z kolorami papierka uniwersalnego"
+        },
+        {
+          "q": "Na jaki kolor fenoloftaleina barwi roztwór zasady?",
+          "options": [
+            "malinowy",
+            "żółty",
+            "pozostaje bezbarwna",
+            "niebieski"
+          ],
+          "correct": 0,
+          "explanation": "Fenoloftaleina w środowisku zasadowym przyjmuje barwę malinową, w kwasowym i obojętnym jest bezbarwna.",
+          "image": "probówka z malinowym roztworem"
+        },
+        {
+          "q": "Co powstaje w reakcji kwasu z zasadą?",
+          "options": [
+            "tlenek i woda",
+            "sól i woda",
+            "sam wodór",
+            "sól i wodór"
+          ],
+          "correct": 1,
+          "explanation": "Reakcja zobojętniania: kwas + zasada → sól + woda.",
+          "image": "dwie zlewki łączone w jedną"
+        },
+        {
+          "q": "Jak nazywa się sól o wzorze CaCO3?",
+          "options": [
+            "siarczan(VI) wapnia",
+            "azotan(V) wapnia",
+            "węglan wapnia",
+            "chlorek wapnia"
+          ],
+          "correct": 2,
+          "explanation": "CaCO3 to węglan wapnia – główny składnik wapienia i kredy.",
+          "image": "kawałek kredy i wapienia"
+        }
+      ]
+    }
+  ],
+  "fizyka": [
+    {
+      "title": "Ruch i siły",
+      "questions": [
+        {
+          "q": "Samochód przejechał 120 km w 2 godziny. Jaka była jego średnia prędkość?",
+          "options": [
+            "50 km/h",
+            "100 km/h",
+            "240 km/h",
+            "60 km/h"
+          ],
+          "correct": 3,
+          "explanation": "v = s / t = 120 km : 2 h = 60 km/h.",
+          "image": "samochód na drodze z licznikiem prędkości"
+        },
+        {
+          "q": "Ile to jest 36 km/h w m/s?",
+          "options": [
+            "10 m/s",
+            "36 m/s",
+            "3,6 m/s",
+            "100 m/s"
+          ],
+          "correct": 0,
+          "explanation": "1 m/s = 3,6 km/h, więc 36 : 3,6 = 10 m/s.",
+          "image": "prędkościomierz z dwiema skalami"
+        },
+        {
+          "q": "Jaka jest jednostka siły w układzie SI?",
+          "options": [
+            "wat",
+            "niuton",
+            "dżul",
+            "paskal"
+          ],
+          "correct": 1,
+          "explanation": "Siłę mierzymy w niutonach: 1 N = 1 kg·m/s².",
+          "image": "siłomierz sprężynowy"
+        },
+        {
+          "q": "Jaką siłą działa ciężar ciała o masie 5 kg (g = 10 m/s²)?",
+          "options": [
+            "0,5 N",
+            "500 N",
+            "50 N",
+            "5 N"
+          ],
+          "correct": 2,
+          "explanation": "F = m·g = 5 kg · 10 m/s² = 50 N.",
+          "image": "odważnik zawieszony na siłomierzu"
+        },
+        {
+          "q": "Treść „każdej akcji towarzyszy reakcja równa co do wartości i przeciwnie skierowana” to:",
+          "options": [
+            "prawo Archimedesa",
+            "I zasada dynamiki",
+            "II zasada dynamiki",
+            "III zasada dynamiki"
+          ],
+          "correct": 3,
+          "explanation": "To III zasada dynamiki Newtona.",
+          "image": "odrzut łódki przy wyskakiwaniu na brzeg"
+        }
+      ]
+    },
+    {
+      "title": "Energia, praca i ciepło",
+      "questions": [
+        {
+          "q": "Jaką pracę wykonano, podnosząc ciało siłą 20 N na wysokość 3 m?",
+          "options": [
+            "60 J",
+            "6,7 J",
+            "23 J",
+            "600 J"
+          ],
+          "correct": 0,
+          "explanation": "W = F·s = 20 N · 3 m = 60 J.",
+          "image": "dźwig podnoszący skrzynię"
+        },
+        {
+          "q": "Jaką energię potencjalną ma ciało o masie 2 kg na wysokości 5 m (g = 10 m/s²)?",
+          "options": [
+            "50 J",
+            "100 J",
+            "10 J",
+            "7 J"
+          ],
+          "correct": 1,
+          "explanation": "Ep = m·g·h = 2 · 10 · 5 = 100 J.",
+          "image": "piłka na półce nad podłogą"
+        },
+        {
+          "q": "Jaka jest jednostka mocy?",
+          "options": [
+            "niuton",
+            "dżul",
+            "wat",
+            "kelwin"
+          ],
+          "correct": 2,
+          "explanation": "Moc to praca w jednostce czasu: 1 W = 1 J/s.",
+          "image": "żarówka z napisem 60 W"
+        },
+        {
+          "q": "Jak nazywa się przejście substancji ze stanu stałego bezpośrednio w gazowy?",
+          "options": [
+            "parowanie",
+            "skraplanie",
+            "topnienie",
+            "sublimacja"
+          ],
+          "correct": 3,
+          "explanation": "Sublimacja to przejście ciała stałego w gaz z pominięciem cieczy, np. suchy lód.",
+          "image": "parujący suchy lód"
+        },
+        {
+          "q": "W jaki sposób ciepło dociera do Ziemi ze Słońca?",
+          "options": [
+            "przez promieniowanie",
+            "przez przewodnictwo",
+            "przez wszystkie trzy jednakowo",
+            "przez konwekcję"
+          ],
+          "correct": 0,
+          "explanation": "W próżni kosmicznej nie ma ośrodka, więc energia przenosi się tylko przez promieniowanie.",
+          "image": "Słońce wysyłające promienie w stronę Ziemi"
+        }
+      ]
+    },
+    {
+      "title": "Elektryczność, fale i optyka",
+      "questions": [
+        {
+          "q": "Jakie natężenie prądu płynie przez opornik 10 Ω przy napięciu 5 V?",
+          "options": [
+            "50 A",
+            "0,5 A",
+            "2 A",
+            "15 A"
+          ],
+          "correct": 1,
+          "explanation": "Z prawa Ohma: I = U / R = 5 V : 10 Ω = 0,5 A.",
+          "image": "schemat obwodu z baterią i opornikiem"
+        },
+        {
+          "q": "W jakich jednostkach mierzymy napięcie elektryczne?",
+          "options": [
+            "w amperach",
+            "w watach",
+            "w woltach",
+            "w omach"
+          ],
+          "correct": 2,
+          "explanation": "Napięcie elektryczne mierzymy w woltach (V) za pomocą woltomierza.",
+          "image": "woltomierz podłączony do baterii"
+        },
+        {
+          "q": "Jak nazywają się dwa bieguny magnesu?",
+          "options": [
+            "górny i dolny",
+            "wschodni i zachodni",
+            "dodatni i ujemny",
+            "północny i południowy"
+          ],
+          "correct": 3,
+          "explanation": "Magnes ma biegun północny (N) i południowy (S); jednoimienne się odpychają.",
+          "image": "magnes sztabkowy z opiłkami żelaza"
+        },
+        {
+          "q": "W którym ośrodku dźwięk NIE może się rozchodzić?",
+          "options": [
+            "w próżni",
+            "w stali",
+            "w wodzie",
+            "w powietrzu"
+          ],
+          "correct": 0,
+          "explanation": "Dźwięk jest falą mechaniczną i potrzebuje ośrodka, więc w próżni się nie rozchodzi.",
+          "image": "astronauci w kosmosie bez dźwięku"
+        },
+        {
+          "q": "Kąt padania promienia na lustro wynosi 30°. Ile wynosi kąt odbicia?",
+          "options": [
+            "15°",
+            "30°",
+            "90°",
+            "60°"
+          ],
+          "correct": 1,
+          "explanation": "Zgodnie z prawem odbicia kąt odbicia jest równy kątowi padania.",
+          "image": "promień światła odbity od lustra płaskiego"
+        }
+      ]
+    }
+  ],
+  "biologia": [
+    {
+      "title": "Układ krążenia i oddychania",
+      "questions": [
+        {
+          "q": "Ile jam (komór i przedsionków) ma serce człowieka?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correct": 2,
+          "explanation": "Serce człowieka ma dwa przedsionki i dwie komory.",
+          "image": "przekrój serca człowieka"
+        },
+        {
+          "q": "Które naczynia krwionośne wyprowadzają krew z serca?",
+          "options": [
+            "żyły",
+            "tylko włosowate",
+            "naczynia limfatyczne",
+            "tętnice"
+          ],
+          "correct": 3,
+          "explanation": "Tętnice prowadzą krew od serca, żyły – do serca.",
+          "image": "schemat tętnicy i żyły"
+        },
+        {
+          "q": "Które elementy krwi transportują tlen?",
+          "options": [
+            "czerwone krwinki",
+            "osocze bez krwinek",
+            "płytki krwi",
+            "białe krwinki"
+          ],
+          "correct": 0,
+          "explanation": "Czerwone krwinki (erytrocyty) zawierają hemoglobinę wiążącą tlen.",
+          "image": "czerwone krwinki pod mikroskopem"
+        },
+        {
+          "q": "Gdzie zachodzi wymiana gazowa w płucach?",
+          "options": [
+            "w oskrzelach",
+            "w pęcherzykach płucnych",
+            "w krtani",
+            "w tchawicy"
+          ],
+          "correct": 1,
+          "explanation": "Tlen i dwutlenek węgla przenikają przez ściany pęcherzyków płucnych i naczyń włosowatych.",
+          "image": "pęcherzyki płucne oplecione naczyniami"
+        },
+        {
+          "q": "Który mięsień odgrywa główną rolę przy wdechu?",
+          "options": [
+            "mięsień czworogłowy",
+            "mięsień sercowy",
+            "przepona",
+            "mięsień dwugłowy"
+          ],
+          "correct": 2,
+          "explanation": "Przepona kurczy się i obniża, zwiększając objętość klatki piersiowej.",
+          "image": "schemat klatki piersiowej z przeponą"
+        }
+      ]
+    },
+    {
+      "title": "Trawienie i układ nerwowy",
+      "questions": [
+        {
+          "q": "Gdzie zaczyna się trawienie skrobi?",
+          "options": [
+            "w przełyku",
+            "w jelicie grubym",
+            "w żołądku",
+            "w jamie ustnej"
+          ],
+          "correct": 3,
+          "explanation": "Amylaza ślinowa zaczyna rozkładać skrobię już w jamie ustnej.",
+          "image": "schemat układu pokarmowego człowieka"
+        },
+        {
+          "q": "Który narząd wytwarza żółć?",
+          "options": [
+            "wątroba",
+            "śledziona",
+            "trzustka",
+            "żołądek"
+          ],
+          "correct": 0,
+          "explanation": "Żółć wytwarza wątroba, a magazynuje ją pęcherzyk żółciowy.",
+          "image": "wątroba z pęcherzykiem żółciowym"
+        },
+        {
+          "q": "W którym odcinku przewodu pokarmowego zachodzi większość wchłaniania składników odżywczych?",
+          "options": [
+            "w jelicie grubym",
+            "w jelicie cienkim",
+            "w żołądku",
+            "w przełyku"
+          ],
+          "correct": 1,
+          "explanation": "Kosmki jelitowe jelita cienkiego mają ogromną powierzchnię wchłaniania.",
+          "image": "kosmki jelitowe w powiększeniu"
+        },
+        {
+          "q": "Jak nazywa się podstawowa komórka układu nerwowego?",
+          "options": [
+            "erytrocyt",
+            "nefron",
+            "neuron",
+            "miocyt gładki"
+          ],
+          "correct": 2,
+          "explanation": "Neuron przewodzi impulsy nerwowe; nefron to jednostka nerki.",
+          "image": "neuron z dendrytami i aksonem"
+        },
+        {
+          "q": "Który narząd koordynuje ruchy i utrzymanie równowagi?",
+          "options": [
+            "rdzeń kręgowy",
+            "tarczyca",
+            "przysadka",
+            "móżdżek"
+          ],
+          "correct": 3,
+          "explanation": "Móżdżek odpowiada za koordynację ruchów i równowagę ciała.",
+          "image": "mózg z zaznaczonym móżdżkiem"
+        }
+      ]
+    },
+    {
+      "title": "Genetyka i ekologia",
+      "questions": [
+        {
+          "q": "Ile chromosomów ma typowa komórka ciała człowieka?",
+          "options": [
+            "46",
+            "23",
+            "44",
+            "48"
+          ],
+          "correct": 0,
+          "explanation": "Komórki somatyczne człowieka mają 46 chromosomów (23 pary), gamety – 23.",
+          "image": "kariotyp człowieka"
+        },
+        {
+          "q": "Gdzie w komórce znajduje się większość DNA?",
+          "options": [
+            "w rybosomach",
+            "w jądrze komórkowym",
+            "w błonie komórkowej",
+            "w wakuoli"
+          ],
+          "correct": 1,
+          "explanation": "Większość DNA komórki eukariotycznej znajduje się w jądrze komórkowym.",
+          "image": "model komórki zwierzęcej z jądrem"
+        },
+        {
+          "q": "Rodzice Aa × Aa. Jakie jest prawdopodobieństwo, że dziecko będzie aa?",
+          "options": [
+            "50%",
+            "75%",
+            "25%",
+            "0%"
+          ],
+          "correct": 2,
+          "explanation": "Z krzyżówki wynika stosunek AA : Aa : aa = 1 : 2 : 1, więc aa to 1/4.",
+          "image": "szachownica Punnetta dla Aa × Aa"
+        },
+        {
+          "q": "Które organizmy są producentami w łańcuchu pokarmowym?",
+          "options": [
+            "grzyby",
+            "roślinożercy",
+            "drapieżniki",
+            "rośliny zielone"
+          ],
+          "correct": 3,
+          "explanation": "Rośliny zielone wytwarzają materię organiczną w fotosyntezie.",
+          "image": "łańcuch pokarmowy: trawa – zając – lis"
+        },
+        {
+          "q": "Jak nazywa się zależność, w której oba gatunki odnoszą korzyść?",
+          "options": [
+            "mutualizm",
+            "drapieżnictwo",
+            "pasożytnictwo",
+            "konkurencja"
+          ],
+          "correct": 0,
+          "explanation": "Mutualizm to obustronnie korzystna zależność, np. porosty (grzyb i glon).",
+          "image": "porost na korze drzewa"
+        }
+      ]
+    }
+  ],
+  "geografia": [
+    {
+      "title": "Geografia Polski",
+      "questions": [
+        {
+          "q": "Jaka jest najdłuższa rzeka Polski?",
+          "options": [
+            "Bug",
+            "Wisła",
+            "Warta",
+            "Odra"
+          ],
+          "correct": 1,
+          "explanation": "Wisła ma około 1047 km (w nowszych pomiarach ok. 1022 km) długości i jest najdłuższą rzeką Polski.",
+          "image": "mapa Polski z biegiem Wisły"
+        },
+        {
+          "q": "Jaki jest najwyższy szczyt Polski?",
+          "options": [
+            "Śnieżka",
+            "Babia Góra",
+            "Rysy",
+            "Kasprowy Wierch"
+          ],
+          "correct": 2,
+          "explanation": "Rysy w Tatrach mają 2499 m n.p.m. (wierzchołek polski).",
+          "image": "panorama Tatr z Rysami"
+        },
+        {
+          "q": "Z iloma państwami graniczy Polska?",
+          "options": [
+            "5",
+            "8",
+            "6",
+            "7"
+          ],
+          "correct": 3,
+          "explanation": "Niemcy, Czechy, Słowacja, Ukraina, Białoruś, Litwa i Rosja – 7 państw.",
+          "image": "mapa Polski z sąsiadami"
+        },
+        {
+          "q": "Ile województw ma Polska?",
+          "options": [
+            "16",
+            "14",
+            "18",
+            "49"
+          ],
+          "correct": 0,
+          "explanation": "Od 1999 r. Polska dzieli się na 16 województw.",
+          "image": "mapa województw Polski"
+        },
+        {
+          "q": "Które jezioro jest największe w Polsce pod względem powierzchni?",
+          "options": [
+            "Gopło",
+            "Śniardwy",
+            "Mamry",
+            "Hańcza"
+          ],
+          "correct": 1,
+          "explanation": "Śniardwy (ok. 113 km²) to największe jezioro; Hańcza jest najgłębsze.",
+          "image": "jezioro Śniardwy z żaglówkami"
+        }
+      ]
+    },
+    {
+      "title": "Europa i świat",
+      "questions": [
+        {
+          "q": "Jaka jest stolica Czech?",
+          "options": [
+            "Budapeszt",
+            "Bratysława",
+            "Praga",
+            "Wiedeń"
+          ],
+          "correct": 2,
+          "explanation": "Stolicą Czech jest Praga.",
+          "image": "Most Karola w Pradze"
+        },
+        {
+          "q": "Który kontynent jest największy pod względem powierzchni?",
+          "options": [
+            "Ameryka Północna",
+            "Afryka",
+            "Europa",
+            "Azja"
+          ],
+          "correct": 3,
+          "explanation": "Azja zajmuje ok. 44 mln km² i jest największym kontynentem.",
+          "image": "mapa świata z kontynentami"
+        },
+        {
+          "q": "Jaka jest najdłuższa rzeka Europy?",
+          "options": [
+            "Wołga",
+            "Wisła",
+            "Dunaj",
+            "Ren"
+          ],
+          "correct": 0,
+          "explanation": "Wołga ma ok. 3530 km i jest najdłuższą rzeką Europy.",
+          "image": "mapa Rosji z biegiem Wołgi"
+        },
+        {
+          "q": "Który ocean jest największy?",
+          "options": [
+            "Arktyczny",
+            "Spokojny",
+            "Indyjski",
+            "Atlantycki"
+          ],
+          "correct": 1,
+          "explanation": "Ocean Spokojny (Pacyfik) jest największym oceanem na Ziemi.",
+          "image": "globus z Oceanem Spokojnym"
+        },
+        {
+          "q": "Na którym kontynencie leży pustynia Sahara?",
+          "options": [
+            "w Australii",
+            "w Ameryce Południowej",
+            "w Afryce",
+            "w Azji"
+          ],
+          "correct": 2,
+          "explanation": "Sahara zajmuje dużą część północnej Afryki.",
+          "image": "wydmy Sahary z karawaną wielbłądów"
+        }
+      ]
+    },
+    {
+      "title": "Mapa, Ziemia i klimat",
+      "questions": [
+        {
+          "q": "Skala mapy 1:100 000 oznacza, że 1 cm na mapie to w terenie:",
+          "options": [
+            "100 m",
+            "100 km",
+            "10 km",
+            "1 km"
+          ],
+          "correct": 3,
+          "explanation": "100 000 cm = 1000 m = 1 km.",
+          "image": "fragment mapy z podziałką liniową"
+        },
+        {
+          "q": "Jaki ruch Ziemi powoduje następowanie dnia i nocy?",
+          "options": [
+            "ruch obrotowy",
+            "ruch Księżyca",
+            "ruch obiegowy",
+            "ruch płyt tektonicznych"
+          ],
+          "correct": 0,
+          "explanation": "Obrót Ziemi wokół własnej osi trwa ok. doby i powoduje dzień i noc.",
+          "image": "Ziemia oświetlona przez Słońce z linią dnia i nocy"
+        },
+        {
+          "q": "Jak nazywa się szerokość geograficzna 0°?",
+          "options": [
+            "koło podbiegunowe",
+            "równik",
+            "zwrotnik Raka",
+            "południk zerowy"
+          ],
+          "correct": 1,
+          "explanation": "Równik ma szerokość geograficzną 0° i dzieli Ziemię na półkule północną i południową.",
+          "image": "globus z zaznaczonym równikiem"
+        },
+        {
+          "q": "Jak zmienia się temperatura powietrza w troposferze wraz z wysokością?",
+          "options": [
+            "rośnie o ok. 0,6°C na 100 m",
+            "spada o ok. 6°C na 100 m",
+            "spada o ok. 0,6°C na 100 m",
+            "nie zmienia się"
+          ],
+          "correct": 2,
+          "explanation": "Średnio temperatura spada o ok. 0,6°C na każde 100 m wysokości.",
+          "image": "góra ze śniegiem na szczycie i termometrami"
+        },
+        {
+          "q": "Kiedy na półkuli północnej jest najdłuższy dzień w roku?",
+          "options": [
+            "ok. 22 grudnia",
+            "ok. 23 września",
+            "ok. 21 marca",
+            "ok. 22 czerwca"
+          ],
+          "correct": 3,
+          "explanation": "Przesilenie letnie ok. 22 czerwca – Słońce góruje nad zwrotnikiem Raka.",
+          "image": "schemat oświetlenia Ziemi w przesilenie letnie"
+        }
+      ]
+    }
+  ],
+  "matematyka": [
+    {
+      "title": "Potęgi, pierwiastki i procenty",
+      "questions": [
+        {
+          "q": "Ile wynosi 2⁵?",
+          "options": [
+            "32",
+            "10",
+            "25",
+            "64"
+          ],
+          "correct": 0,
+          "explanation": "2·2·2·2·2 = 32.",
+          "image": "schemat podwajania kwadracików"
+        },
+        {
+          "q": "Ile wynosi √144?",
+          "options": [
+            "14",
+            "12",
+            "72",
+            "16"
+          ],
+          "correct": 1,
+          "explanation": "12² = 144, więc √144 = 12.",
+          "image": "kwadrat o polu 144 i boku 12"
+        },
+        {
+          "q": "Ile to jest 20% z 150?",
+          "options": [
+            "20",
+            "300",
+            "30",
+            "15"
+          ],
+          "correct": 2,
+          "explanation": "0,2 · 150 = 30.",
+          "image": "diagram kołowy z wyciętymi 20%"
+        },
+        {
+          "q": "Cena 200 zł wzrosła o 10%. Jaka jest nowa cena?",
+          "options": [
+            "202 zł",
+            "180 zł",
+            "210 zł",
+            "220 zł"
+          ],
+          "correct": 3,
+          "explanation": "10% z 200 zł to 20 zł, więc 200 + 20 = 220 zł.",
+          "image": "metka z przekreśloną ceną"
+        },
+        {
+          "q": "Ile wynosi 10³ · 10²?",
+          "options": [
+            "10⁵",
+            "100⁵",
+            "10¹",
+            "10⁶"
+          ],
+          "correct": 0,
+          "explanation": "Przy mnożeniu potęg o tej samej podstawie dodajemy wykładniki: 3 + 2 = 5.",
+          "image": "kostki dziesiątkowe"
+        }
+      ]
+    },
+    {
+      "title": "Wyrażenia algebraiczne i równania",
+      "questions": [
+        {
+          "q": "Rozwiązaniem równania 3x + 5 = 20 jest:",
+          "options": [
+            "x = 25/3",
+            "x = 5",
+            "x = 3",
+            "x = 15"
+          ],
+          "correct": 1,
+          "explanation": "3x = 15, więc x = 5.",
+          "image": "waga szalkowa w równowadze"
+        },
+        {
+          "q": "Uprość wyrażenie 2(x + 3) − x.",
+          "options": [
+            "3x + 6",
+            "x + 3",
+            "x + 6",
+            "x + 5"
+          ],
+          "correct": 2,
+          "explanation": "2x + 6 − x = x + 6.",
+          "image": "kafelki algebraiczne"
+        },
+        {
+          "q": "Ile wynosi wartość wyrażenia a² − 2a dla a = −3?",
+          "options": [
+            "−3",
+            "−15",
+            "3",
+            "15"
+          ],
+          "correct": 3,
+          "explanation": "(−3)² − 2·(−3) = 9 + 6 = 15.",
+          "image": "tablica z podstawianiem liczby"
+        },
+        {
+          "q": "Który układ liczb jest rozwiązaniem układu x + y = 7 i x − y = 1?",
+          "options": [
+            "x = 4, y = 3",
+            "x = 5, y = 2",
+            "x = 3, y = 4",
+            "x = 6, y = 1"
+          ],
+          "correct": 0,
+          "explanation": "Dodając równania: 2x = 8, x = 4, więc y = 3.",
+          "image": "dwie proste przecinające się w punkcie (4, 3)"
+        },
+        {
+          "q": "Ile wynosi (a + b)² w rozwinięciu?",
+          "options": [
+            "a² + b²",
+            "a² + 2ab + b²",
+            "2a + 2b",
+            "a² + ab + b²"
+          ],
+          "correct": 1,
+          "explanation": "Ze wzoru skróconego mnożenia: (a + b)² = a² + 2ab + b².",
+          "image": "kwadrat podzielony na pola a², ab, ab, b²"
+        }
+      ]
+    },
+    {
+      "title": "Geometria",
+      "questions": [
+        {
+          "q": "Ile wynosi suma miar kątów wewnętrznych trójkąta?",
+          "options": [
+            "270°",
+            "360°",
+            "180°",
+            "90°"
+          ],
+          "correct": 2,
+          "explanation": "Suma kątów w każdym trójkącie wynosi 180°.",
+          "image": "trójkąt z zaznaczonymi kątami"
+        },
+        {
+          "q": "Przyprostokątne trójkąta prostokątnego mają 6 cm i 8 cm. Ile ma przeciwprostokątna?",
+          "options": [
+            "14 cm",
+            "48 cm",
+            "12 cm",
+            "10 cm"
+          ],
+          "correct": 3,
+          "explanation": "Z twierdzenia Pitagorasa: 6² + 8² = 36 + 64 = 100, √100 = 10 cm.",
+          "image": "trójkąt prostokątny z kwadratami na bokach"
+        },
+        {
+          "q": "Jakie jest pole koła o promieniu 3 cm?",
+          "options": [
+            "9π cm²",
+            "6π cm²",
+            "3π cm²",
+            "12π cm²"
+          ],
+          "correct": 0,
+          "explanation": "P = πr² = π · 3² = 9π cm².",
+          "image": "koło z zaznaczonym promieniem"
+        },
+        {
+          "q": "Jaka jest objętość sześcianu o krawędzi 4 cm?",
+          "options": [
+            "48 cm³",
+            "64 cm³",
+            "96 cm³",
+            "16 cm³"
+          ],
+          "correct": 1,
+          "explanation": "V = a³ = 4³ = 64 cm³.",
+          "image": "sześcian z zaznaczoną krawędzią"
+        },
+        {
+          "q": "Ile wynosi pole trapezu o podstawach 6 cm i 4 cm i wysokości 5 cm?",
+          "options": [
+            "50 cm²",
+            "20 cm²",
+            "25 cm²",
+            "30 cm²"
+          ],
+          "correct": 2,
+          "explanation": "P = (a + b)·h / 2 = (6 + 4)·5 / 2 = 25 cm².",
+          "image": "trapez z zaznaczoną wysokością"
+        }
+      ]
+    }
+  ]
+}

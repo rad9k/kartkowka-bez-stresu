@@ -1,13 +1,22 @@
-<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Panel admina</title><link rel="stylesheet" href="style.css"><meta name="robots" content="noindex"></head><body>
-<nav><div class="wrap"><b>🔐 Panel admina</b><a href="index.html">← Strona</a></div></nav><div class="wrap" style="padding:40px 20px">
-<div class="card" id="login"><h3>Zaloguj się</h3><form onsubmit="login(event)"><input type="email" id="em" placeholder="E-mail admina" required><input type="password" id="pw" placeholder="Hasło" required><button class="btn s">Zaloguj</button></form><p id="err" style="color:#dc2626"></p></div>
-<div id="panel" style="display:none"><div class="grid"><div class="card"><h3>Wszystkie zapisy</h3><div class="price" id="n">0</div></div><div class="card"><h3>Rodzice</h3><div class="price" id="nr">0</div></div><div class="card"><h3>Nauczyciele</h3><div class="price" id="nn">0</div></div></div><br>
-<div class="card"><table><thead><tr><th>Data</th><th>E-mail</th><th>Kto</th></tr></thead><tbody id="rows"></tbody></table></div></div></div>
+<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Panel admina – Kartkówka bez stresu</title><meta name="robots" content="noindex"><link rel="stylesheet" href="style.css"></head><body style="background:linear-gradient(135deg,#ede9fe,#fce7f3);min-height:100vh">
+<nav class="sc"><div class="wrap"><a class="logo" href="index.html">🎓 <span>Panel admina</span></a><div class="links"><button class="btn sm" id="out" style="display:none">Wyloguj</button></div></div></nav>
+<div class="wrap" style="padding:110px 20px 40px">
+<div class="card" id="login" style="max-width:420px;margin:auto"><h3>🔐 Zaloguj się</h3><form id="lf"><input type="email" id="em" placeholder="E-mail admina" required autocomplete="username"><input type="password" id="pw" placeholder="Hasło" required autocomplete="current-password"><button class="btn" style="width:100%;margin-top:8px">Zaloguj</button></form><p id="err" style="color:#dc2626;font-weight:700"></p></div>
+<div id="panel" style="display:none"><div class="grid"><div class="card"><div class="ic">📬</div><h3>Wszystkie zapisy</h3><div class="price" id="n">0</div></div><div class="card"><div class="ic">👨‍👩‍👧</div><h3>Rodzice</h3><div class="price" id="nr">0</div></div><div class="card"><div class="ic">🧑‍🏫</div><h3>Nauczyciele</h3><div class="price" id="nn">0</div></div><div class="card"><div class="ic">📅</div><h3>Ostatnie 24 h</h3><div class="price" id="nd">0</div></div></div><br>
+<div class="card"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px"><h3>Lista zapisów</h3><span><button class="btn sm ghost" id="ref">🔄 Odśwież</button> <button class="btn sm" id="csv">⬇️ CSV</button></span></div><div style="overflow:auto"><table><thead><tr><th>Data</th><th>E-mail</th><th>Kto</th></tr></thead><tbody id="rows"></tbody></table></div></div></div></div>
 <script src="config.js"></script><script>
-if(!CFG.SUPABASE_URL)document.getElementById('err').textContent='Baza danych nie jest jeszcze podłączona.';
-async function login(e){e.preventDefault();const r=await fetch(CFG.SUPABASE_URL+'/auth/v1/token?grant_type=password',{method:'POST',headers:{apikey:CFG.SUPABASE_KEY,'Content-Type':'application/json'},body:JSON.stringify({email:em.value,password:pw.value})});
-const j=await r.json();if(!j.access_token){err.textContent='Błędny e-mail lub hasło.';return}
-const d=await(await fetch(CFG.SUPABASE_URL+'/rest/v1/zapisy?select=*&order=created_at.desc',{headers:{apikey:CFG.SUPABASE_KEY,Authorization:'Bearer '+j.access_token}})).json();
-document.getElementById('login').style.display='none';panel.style.display='block';n.textContent=d.length;nr.textContent=d.filter(x=>x.kto.includes('rodzic')).length;nn.textContent=d.filter(x=>x.kto.includes('nauczyciel')).length;
-rows.innerHTML=d.map(x=>`<tr><td>${new Date(x.created_at).toLocaleString('pl-PL')}</td><td>${x.email.replace(/</g,'&lt;')}</td><td>${x.kto}</td></tr>`).join('')}
+const $=i=>document.getElementById(i),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));let D=[];
+async function load(){const t=sessionStorage.getItem('tok');if(!t)return;
+ const r=await fetch(CFG.SUPABASE_URL+'/rest/v1/zapisy?select=*&order=created_at.desc',{headers:{apikey:CFG.SUPABASE_KEY,Authorization:'Bearer '+t}});
+ if(r.status===401){sessionStorage.removeItem('tok');$('err').textContent='Sesja wygasła, zaloguj się ponownie.';return}
+ if(!r.ok){$('err').textContent='Błąd bazy danych ('+r.status+').';return}
+ D=await r.json();$('login').style.display='none';$('panel').style.display='block';$('out').style.display='';
+ $('n').textContent=D.length;$('nr').textContent=D.filter(x=>x.kto==='rodzic').length;$('nn').textContent=D.filter(x=>x.kto==='nauczyciel').length;$('nd').textContent=D.filter(x=>Date.now()-new Date(x.created_at)<864e5).length;
+ $('rows').innerHTML=D.map(x=>`<tr><td>${new Date(x.created_at).toLocaleString('pl-PL')}</td><td>${esc(x.email)}</td><td>${esc(x.kto)}</td></tr>`).join('')||'<tr><td colspan="3">Brak zapisów.</td></tr>'}
+$('lf').onsubmit=async e=>{e.preventDefault();$('err').textContent='';
+ const r=await fetch(CFG.SUPABASE_URL+'/auth/v1/token?grant_type=password',{method:'POST',headers:{apikey:CFG.SUPABASE_KEY,'Content-Type':'application/json'},body:JSON.stringify({email:$('em').value,password:$('pw').value})});
+ const j=await r.json().catch(()=>({}));if(!j.access_token){$('err').textContent='Błędny e-mail lub hasło.';return}sessionStorage.setItem('tok',j.access_token);load()};
+$('out').onclick=()=>{sessionStorage.removeItem('tok');location.reload()};$('ref').onclick=load;
+$('csv').onclick=()=>{const c='data;email;kto\n'+D.map(x=>[x.created_at,x.email,x.kto].join(';')).join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\ufeff'+c],{type:'text/csv'}));a.download='zapisy.csv';a.click()};
+load();
 </script></body></html>

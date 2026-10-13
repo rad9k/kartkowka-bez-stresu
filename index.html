@@ -1,18 +1,75 @@
-<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kartkówka bez stresu – quizy z chemii, fizyki i biologii</title><link rel="stylesheet" href="style.css"></head><body>
-<nav><div class="wrap"><b>🧪 Kartkówka bez stresu</b><div><a href="#quizy">Quizy</a><a href="#cennik">Cennik</a><a href="#zapis">Zapisz się</a></div></div></nav>
-<div class="hero"><div class="wrap"><h1>Zdaj kartkówkę bez stresu</h1><p>Quizy z chemii, fizyki i biologii dla 7 i 8 klasy, zgodne z podstawą programową. Rodzic widzi postępy dziecka w swoim panelu.</p><a class="btn" href="#quizy">Wypróbuj za darmo</a> &nbsp; <a class="btn s" href="#zapis">Przedsprzedaż za 1 zł</a></div></div>
-<section><div class="wrap"><h2>Jak to działa?</h2><div class="grid">
-<div class="card"><div class="ic">📚</div><h3>Zgodne z podstawą</h3><p>Pytania z tematów, które naprawdę są na kartkówkach w 7 i 8 klasie.</p></div>
-<div class="card"><div class="ic">💡</div><h3>Wyjaśnienia</h3><p>Po każdym quizie dziecko widzi poprawne odpowiedzi i krótkie wytłumaczenie.</p></div>
-<div class="card"><div class="ic">👨‍👩‍👧</div><h3>Panel rodzica</h3><p>Widzisz, z czego dziecko jest mocne, a co trzeba powtórzyć.</p></div>
-<div class="card"><div class="ic">🔒</div><h3>Bezpiecznie</h3><p>Konto zakłada rodzic. Nie zbieramy maila ani nazwiska dziecka.</p></div></div></div></section>
-<section id="quizy" style="background:#e0e7ff"><div class="wrap"><h2>Darmowe quizy</h2><div class="tabs" id="tabs"></div><div id="quiz"></div><div style="text-align:center"><button class="btn s" id="chk" onclick="check()">Sprawdź</button> <button class="btn" onclick="show(cur)">Od nowa</button></div><div class="score" id="score"></div></div></section>
-<section id="cennik"><div class="wrap"><h2>Cennik</h2><div class="grid">
-<div class="card"><h3>Start</h3><div class="price">0 zł</div><p>Jeden przedmiot, podstawowe quizy.</p></div>
-<div class="card" style="border:3px solid #4f46e5"><h3>Pełny dostęp</h3><div class="price">34 zł<small style="font-size:16px">/mies.</small></div><p>Chemia, fizyka i biologia, wyjaśnienia i panel rodzica. <b>Pierwszy miesiąc za 1 zł w przedsprzedaży.</b></p></div></div></div></section>
-<section id="zapis" style="background:#e0e7ff"><div class="wrap" style="max-width:560px"><h2>Zapisz się na przedsprzedaż</h2><div class="card"><form onsubmit="zapis(event)">
-<input type="email" id="email" required placeholder="E-mail rodzica"><select id="kto"><option>Jestem rodzicem</option><option>Jestem nauczycielem</option></select>
-<label style="display:block;margin:12px 0"><input type="checkbox" required style="width:auto"> Jestem pełnoletni i akceptuję <a href="regulamin.html">regulamin</a> oraz <a href="polityka-prywatnosci.html">politykę prywatności</a>.</label>
-<button class="btn s" style="width:100%">Zapisz mnie</button></form><p id="dzieki" style="font-weight:700;color:#16a34a"></p></div></div></section>
-<footer><a href="regulamin.html">Regulamin</a> · <a href="polityka-prywatnosci.html">Polityka prywatności</a> · <a href="admin.html">Admin</a><br><br>Strona testowa · © 2026 Kartkówka bez stresu</footer>
-<script src="config.js"></script><script src="quizy.js"></script><script src="app.js"></script></body></html>
+<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kartkówka bez stresu – quizy z 5 przedmiotów dla 7 i 8 klasy</title>
+<meta name="description" content="Darmowe quizy z chemii, fizyki, biologii, matematyki i geografii dla klas 7–8 z ilustracjami i wyjaśnieniami. Panel rodzica. Przedsprzedaż: pierwszy miesiąc za 1 zł.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+<link rel="stylesheet" href="style.css"></head><body>
+<canvas id="confetti"></canvas>
+<nav id="nav"><div class="wrap"><a class="logo" href="#">🎓 <span>Kartkówka bez stresu</span></a><div class="links"><a href="#jak">Jak to działa</a><a href="#quizy">Quizy</a><a href="#rodzic">Dla rodzica</a><a href="#cennik">Cennik</a><a class="btn sm" href="#zapis">Zapisz się</a></div></div></nav>
+
+<header class="hero"><div class="blob" style="width:120px;height:120px;background:#a78bfa;top:15%;left:4%"></div><div class="blob" style="width:80px;height:80px;background:#f472b6;bottom:12%;right:6%;animation-delay:-2s"></div>
+<div class="wrap"><div class="reveal">
+<span class="pill">✨ Przedsprzedaż: pierwszy miesiąc za 1 zł</span>
+<h1>Kartkówka?<br><span class="grad">Luz. Ogarniesz.</span></h1>
+<p class="lead">Krótkie quizy z <b>chemii, fizyki, biologii, matematyki i geografii</b> dla 7 i 8 klasy. Z obrazkami, wyjaśnieniami i panelem, w którym rodzic widzi postępy.</p>
+<div class="cta"><a class="btn" href="#quizy">🚀 Rozwiąż quiz za darmo</a><a class="btn ghost" href="#zapis">Zapisz się za 1 zł</a></div>
+<div class="trust"><span>✅ Zgodne z podstawą programową</span><span>⏱️ 5 minut dziennie</span><span>🔒 Bez danych dziecka</span></div>
+</div>
+<div class="orbit reveal d2"><div class="ring"></div><div class="ring r2"></div><div class="core">🧠</div>
+<div class="it" style="top:0;left:42%">🧪</div><div class="it" style="top:30%;right:0">⚡</div><div class="it" style="bottom:4%;right:16%">🫀</div><div class="it" style="bottom:4%;left:16%">📐</div><div class="it" style="top:30%;left:0">🌍</div></div>
+</div></header>
+
+<section><div class="wrap"><div class="stats reveal">
+<div><b data-count="5">0</b>przedmiotów</div><div><b data-count="15">0</b>quizów na start</div><div><b data-count="75">0</b>pytań z ilustracjami</div><div><b data-count="34" data-suf=" zł">0</b>miesięcznie po przedsprzedaży</div>
+</div></div></section>
+
+<section id="jak"><div class="wrap"><h2 class="reveal">Jak to działa?</h2><p class="sub reveal">Zero nudy, zero wkuwania na pamięć. Dziecko ćwiczy, rodzic wie, na czym stoi.</p>
+<div class="grid steps">
+<div class="card reveal"><div class="ic">🎯</div><h3>Wybierz przedmiot</h3><p>Pięć przedmiotów, tematy z 7 i 8 klasy – dokładnie to, co jest na kartkówkach.</p></div>
+<div class="card reveal d1"><div class="ic">🖼️</div><h3>Rozwiąż quiz</h3><p>Każde pytanie ma rysunek: modele cząsteczek, serce, mapy, wykresy.</p></div>
+<div class="card reveal d2"><div class="ic">💡</div><h3>Zrozum błędy</h3><p>Po „Sprawdź” widać dobre i złe odpowiedzi oraz krótkie wyjaśnienie.</p></div>
+<div class="card reveal d3"><div class="ic">📈</div><h3>Rodzic widzi postęp</h3><p>Panel pokazuje mocne strony i tematy do powtórki.</p></div>
+</div></div></section>
+
+<section id="quizy" style="background:linear-gradient(180deg,transparent,#f3e8ff,transparent)"><div class="wrap">
+<h2 class="reveal">Sprawdź się teraz – <span class="grad">za darmo</span></h2><p class="sub reveal">Wybierz przedmiot i quiz. Kolejność odpowiedzi losuje się przy każdym podejściu.</p>
+<div class="subjects reveal" id="subjects"></div><div class="qlist" id="qlist"></div>
+<div class="quizbox reveal" id="quizbox"><div class="prog"><i id="prog"></i></div><h3 id="qtitle" style="margin:0"></h3><div id="quiz"></div>
+<div class="qactions"><button class="btn" id="chk">✅ Sprawdź</button><button class="btn ghost" id="again">🔄 Od nowa</button></div><div class="result" id="result"></div></div>
+</div></section>
+
+<section id="rodzic"><div class="wrap parent">
+<div class="reveal"><h2 style="text-align:left">Panel rodzica.<br><span class="grad">Wiesz, zanim przyjdzie ocena.</span></h2>
+<p class="lead">Widzisz, ile quizów dziecko rozwiązało, z czego idzie mu świetnie, a co warto powtórzyć przed sprawdzianem. Bez zaglądania przez ramię.</p>
+<div class="cta"><a class="btn" href="#zapis">Chcę panel rodzica</a></div></div>
+<div class="mock reveal d2" id="mock"><b>📊 Postępy: Ola, 8 klasa</b>
+<div class="bar"><span>🧪 Chemia</span><div><i style="--w:86%;background:#8b5cf6"></i></div></div>
+<div class="bar"><span>⚡ Fizyka</span><div><i style="--w:64%;background:#f59e0b"></i></div></div>
+<div class="bar"><span>🫀 Biologia</span><div><i style="--w:92%;background:#ec4899"></i></div></div>
+<div class="bar"><span>📐 Matma</span><div><i style="--w:71%;background:#3b82f6"></i></div></div>
+<div class="bar"><span>🌍 Geografia</span><div><i style="--w:55%;background:#10b981"></i></div></div>
+<p style="color:var(--mut);margin:12px 0 0">💡 Do powtórki: <b>prawo Ohma</b>, <b>skala mapy</b></p></div>
+</div></section>
+
+<section id="cennik"><div class="wrap"><h2 class="reveal">Prosty cennik</h2><p class="sub reveal">Bez umów na lata. Rezygnujesz kiedy chcesz.</p>
+<div class="grid" style="max-width:820px;margin:auto">
+<div class="card plan reveal"><h3>Start</h3><div class="price">0 zł</div><ul><li>Darmowe quizy na stronie</li><li>Wyjaśnienia odpowiedzi</li><li>Wszystkie 5 przedmiotów na próbę</li></ul><a class="btn ghost" href="#quizy">Rozwiąż quiz</a></div>
+<div class="card plan hot reveal d1"><span class="badge">🔥 Przedsprzedaż</span><h3>Pełny dostęp</h3><div class="price">1 zł <small>pierwszy miesiąc</small></div><p>potem <b>34 zł/mies.</b></p><ul><li>Nowe quizy co tydzień</li><li>Panel rodzica z postępami</li><li>Powtórki przed sprawdzianem</li></ul><a class="btn" href="#zapis">Zapisz się</a></div>
+</div></div></section>
+
+<section class="faq"><div class="wrap"><h2 class="reveal">Pytania i odpowiedzi</h2>
+<details class="reveal"><summary>Dla kogo jest Kartkówka bez stresu?</summary><p>Dla uczniów 7 i 8 klasy szkoły podstawowej oraz ich rodziców. Konto zakłada i opłaca rodzic.</p></details>
+<details class="reveal"><summary>Czy quizy są zgodne z podstawą programową?</summary><p>Tak, pytania obejmują tematy z podstawy programowej dla klas 7–8 z chemii, fizyki, biologii, matematyki i geografii.</p></details>
+<details class="reveal"><summary>Na czym polega przedsprzedaż?</summary><p>Zapisujesz się teraz, a gdy ruszymy, dostaniesz link do płatności: pierwszy miesiąc za 1 zł, potem 34 zł miesięcznie. Zapis do niczego nie zobowiązuje.</p></details>
+<details class="reveal"><summary>Czy zbieracie dane dziecka?</summary><p>Nie. Prosimy tylko o e-mail osoby dorosłej. Szczegóły w <a href="polityka-prywatnosci.html">polityce prywatności</a>.</p></details>
+</div></section>
+
+<section id="zapis"><div class="wrap"><div class="signup reveal">
+<div><h2>Zgarnij pierwszy miesiąc za 1 zł 🎉</h2><p style="opacity:.9;font-size:18px">Zostaw e-mail, a damy znać, gdy wystartujemy. Liczba miejsc w przedsprzedaży jest ograniczona.</p></div>
+<form id="form"><input type="email" id="email" required placeholder="Twój e-mail (rodzica)" maxlength="200">
+<select id="kto"><option value="rodzic">Jestem rodzicem</option><option value="nauczyciel">Jestem nauczycielem</option></select>
+<label style="display:flex;gap:8px;align-items:flex-start;font-size:14px;margin:10px 0"><input type="checkbox" required style="width:auto;margin-top:4px"> <span>Jestem pełnoletni i akceptuję <a href="regulamin.html">regulamin</a> oraz <a href="polityka-prywatnosci.html">politykę prywatności</a>.</span></label>
+<button class="btn" style="width:100%" id="sbtn">Zapisz mnie 🚀</button><p class="msg" id="msg"></p></form>
+</div></div></section>
+
+<footer><a href="regulamin.html">Regulamin</a> · <a href="polityka-prywatnosci.html">Polityka prywatności</a> · <a href="admin.html">Panel admina</a><br><br>© 2026 Kartkówka bez stresu</footer>
+<script src="config.js"></script><script src="ilustracje.js"></script><script src="app.js"></script></body></html>
