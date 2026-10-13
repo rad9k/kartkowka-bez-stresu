@@ -1,15 +1,18 @@
-<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kartkówka bez stresu – quizy z chemii, fizyki i biologii</title>
-<style>body{font-family:system-ui,sans-serif;margin:0;color:#222;background:#f7f9fc}header{background:#2b6cb0;color:#fff;padding:48px 20px;text-align:center}main{max-width:760px;margin:auto;padding:20px}.card{background:#fff;border-radius:12px;padding:20px;margin:16px 0;box-shadow:0 2px 8px #0001}button{background:#2b6cb0;color:#fff;border:0;border-radius:8px;padding:12px 20px;font-size:16px;cursor:pointer}input{padding:10px;font-size:16px;width:100%;box-sizing:border-box;margin:6px 0}.ok{color:green}.bad{color:#c00}small{color:#666}</style></head><body>
-<header><h1>Kartkówka bez stresu</h1><p>Quizy AI z chemii, fizyki i biologii dla 7 i 8 klasy, zgodne z podstawą programową. Z panelem postępów dla rodzica.</p></header>
-<main>
-<div class="card"><h2>Dla rodziców</h2><ul><li>Krótkie quizy przed każdą kartkówką</li><li>Panel, w którym widzisz postępy dziecka</li><li>Jeden przedmiot za darmo, pełny dostęp 29–39 zł miesięcznie</li><li>Przedsprzedaż: pierwszy miesiąc za 1 zł</li></ul></div>
-<div class="card"><h2>Darmowy quiz: Tlenki metali i niemetali</h2><div id="quiz"></div><button onclick="check()">Sprawdź</button><p id="wynik"></p></div>
-<div class="card"><h2>Zapisz się na przedsprzedaż</h2><form onsubmit="zapis(event)"><input type="email" required placeholder="E-mail rodzica" id="email"><select id="kto"><option>Jestem rodzicem</option><option>Jestem nauczycielem</option></select><br><br><label><input type="checkbox" required style="width:auto"> Jestem pełnoletni i akceptuję <a href="regulamin.html">regulamin</a> i <a href="polityka-prywatnosci.html">politykę prywatności</a></label><br><br><button>Zapisz mnie</button></form><p id="dzieki"></p><small>Strona testowa. Konto zakłada i opłaca rodzic. <a href="regulamin.html">Regulamin</a> · <a href="polityka-prywatnosci.html">Polityka prywatności</a></small></div>
-</main>
-<script>
-const Q=[["Jaki jest wzór tlenku wapnia?",["CaO","Ca2O","CaO2"],0],["Jak nazywa się N2O5?",["tlenek azotu(II)","tlenek azotu(V)","tlenek azotu(IV)"],1],["Który tlenek to czad?",["CO2","CO","SO2"],1],["Wzór tlenku żelaza(III) to:",["FeO","Fe3O2","Fe2O3"],2],["SO3 to:",["tlenek siarki(VI)","tlenek siarki(IV)","tlenek siarki(III)"],0]];
-document.getElementById('quiz').innerHTML=Q.map((q,i)=>`<p><b>${i+1}. ${q[0]}</b><br>`+q[1].map((a,j)=>`<label><input type=radio name=q${i} value=${j} style="width:auto"> ${a}</label><br>`).join('')+'</p>').join('');
-function check(){let s=0;Q.forEach((q,i)=>{const c=document.querySelector(`input[name=q${i}]:checked`);if(c&&+c.value===q[2])s++});document.getElementById('wynik').innerHTML=`Wynik: <b>${s}/${Q.length}</b>`}
-function zapis(e){e.preventDefault();const l=JSON.parse(localStorage.zapisy||'[]');l.push({e:email.value,k:kto.value,t:Date.now()});localStorage.zapisy=JSON.stringify(l);dzieki.innerHTML='<span class=ok>Dziękujemy! Odezwiemy się z linkiem do przedsprzedaży.</span>'}
-</script></body></html>
+<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kartkówka bez stresu – quizy z chemii, fizyki i biologii</title><link rel="stylesheet" href="style.css"></head><body>
+<nav><div class="wrap"><b>🧪 Kartkówka bez stresu</b><div><a href="#quizy">Quizy</a><a href="#cennik">Cennik</a><a href="#zapis">Zapisz się</a></div></div></nav>
+<div class="hero"><div class="wrap"><h1>Zdaj kartkówkę bez stresu</h1><p>Quizy z chemii, fizyki i biologii dla 7 i 8 klasy, zgodne z podstawą programową. Rodzic widzi postępy dziecka w swoim panelu.</p><a class="btn" href="#quizy">Wypróbuj za darmo</a> &nbsp; <a class="btn s" href="#zapis">Przedsprzedaż za 1 zł</a></div></div>
+<section><div class="wrap"><h2>Jak to działa?</h2><div class="grid">
+<div class="card"><div class="ic">📚</div><h3>Zgodne z podstawą</h3><p>Pytania z tematów, które naprawdę są na kartkówkach w 7 i 8 klasie.</p></div>
+<div class="card"><div class="ic">💡</div><h3>Wyjaśnienia</h3><p>Po każdym quizie dziecko widzi poprawne odpowiedzi i krótkie wytłumaczenie.</p></div>
+<div class="card"><div class="ic">👨‍👩‍👧</div><h3>Panel rodzica</h3><p>Widzisz, z czego dziecko jest mocne, a co trzeba powtórzyć.</p></div>
+<div class="card"><div class="ic">🔒</div><h3>Bezpiecznie</h3><p>Konto zakłada rodzic. Nie zbieramy maila ani nazwiska dziecka.</p></div></div></div></section>
+<section id="quizy" style="background:#e0e7ff"><div class="wrap"><h2>Darmowe quizy</h2><div class="tabs" id="tabs"></div><div id="quiz"></div><div style="text-align:center"><button class="btn s" id="chk" onclick="check()">Sprawdź</button> <button class="btn" onclick="show(cur)">Od nowa</button></div><div class="score" id="score"></div></div></section>
+<section id="cennik"><div class="wrap"><h2>Cennik</h2><div class="grid">
+<div class="card"><h3>Start</h3><div class="price">0 zł</div><p>Jeden przedmiot, podstawowe quizy.</p></div>
+<div class="card" style="border:3px solid #4f46e5"><h3>Pełny dostęp</h3><div class="price">34 zł<small style="font-size:16px">/mies.</small></div><p>Chemia, fizyka i biologia, wyjaśnienia i panel rodzica. <b>Pierwszy miesiąc za 1 zł w przedsprzedaży.</b></p></div></div></div></section>
+<section id="zapis" style="background:#e0e7ff"><div class="wrap" style="max-width:560px"><h2>Zapisz się na przedsprzedaż</h2><div class="card"><form onsubmit="zapis(event)">
+<input type="email" id="email" required placeholder="E-mail rodzica"><select id="kto"><option>Jestem rodzicem</option><option>Jestem nauczycielem</option></select>
+<label style="display:block;margin:12px 0"><input type="checkbox" required style="width:auto"> Jestem pełnoletni i akceptuję <a href="regulamin.html">regulamin</a> oraz <a href="polityka-prywatnosci.html">politykę prywatności</a>.</label>
+<button class="btn s" style="width:100%">Zapisz mnie</button></form><p id="dzieki" style="font-weight:700;color:#16a34a"></p></div></div></section>
+<footer><a href="regulamin.html">Regulamin</a> · <a href="polityka-prywatnosci.html">Polityka prywatności</a> · <a href="admin.html">Admin</a><br><br>Strona testowa · © 2026 Kartkówka bez stresu</footer>
+<script src="config.js"></script><script src="quizy.js"></script><script src="app.js"></script></body></html>

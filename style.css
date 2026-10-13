@@ -1,0 +1,16 @@
+*{box-sizing:border-box}body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:#1e293b;background:#f1f5f9}
+a{color:#4f46e5}.wrap{max-width:1040px;margin:auto;padding:0 20px}
+nav{position:sticky;top:0;background:#ffffffee;backdrop-filter:blur(8px);box-shadow:0 1px 0 #e2e8f0;z-index:9}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}nav b{font-size:20px}nav a{margin-left:18px;text-decoration:none;color:#334155;font-weight:600}
+.hero{background:linear-gradient(135deg,#4f46e5,#06b6d4);color:#fff;padding:90px 0;text-align:center}.hero h1{font-size:46px;margin:0 0 16px}.hero p{font-size:20px;opacity:.95;max-width:680px;margin:0 auto 28px}
+.btn{display:inline-block;background:#facc15;color:#1e293b;border:0;border-radius:999px;padding:14px 30px;font-size:17px;font-weight:700;cursor:pointer;text-decoration:none;box-shadow:0 6px 18px #0002;transition:.2s}.btn:hover{transform:translateY(-2px)}
+.btn.s{background:#4f46e5;color:#fff}section{padding:70px 0}h2{font-size:34px;text-align:center;margin:0 0 36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}.card{background:#fff;border-radius:18px;padding:26px;box-shadow:0 8px 24px #0f172a12}
+.card .ic{font-size:40px}.price{font-size:40px;font-weight:800;color:#4f46e5}
+.tabs{display:flex;justify-content:center;gap:10px;margin-bottom:26px;flex-wrap:wrap}.tab{padding:12px 22px;border-radius:999px;border:2px solid #4f46e5;background:#fff;color:#4f46e5;font-weight:700;cursor:pointer}.tab.on{background:#4f46e5;color:#fff}
+.q{background:#fff;border-radius:18px;padding:24px;margin:0 auto 18px;max-width:760px;box-shadow:0 8px 24px #0f172a12}.q svg{display:block;margin:10px auto;max-width:100%}
+.opt{display:block;padding:12px 16px;margin:8px 0;border:2px solid #e2e8f0;border-radius:12px;cursor:pointer}.opt input{margin-right:10px}
+.opt.good{border-color:#16a34a;background:#dcfce7}.opt.bad{border-color:#dc2626;background:#fee2e2}.ex{display:none;margin-top:10px;padding:12px;border-radius:10px;background:#eef2ff}.done .ex{display:block}
+.score{text-align:center;font-size:22px;font-weight:700;margin:16px}form input,form select{width:100%;padding:14px;margin:8px 0;border:2px solid #e2e8f0;border-radius:12px;font-size:16px}
+footer{background:#0f172a;color:#94a3b8;padding:30px 0;text-align:center}footer a{color:#cbd5e1}
+table{width:100%;border-collapse:collapse;background:#fff}td,th{padding:10px;border-bottom:1px solid #e2e8f0;text-align:left}
